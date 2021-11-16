@@ -99,12 +99,12 @@ body {
     color: #c7cacc;
 }
 
-.section-profile {
+.contatti {
     background-color: #fff;
     border-bottom: 1px solid lightgrey;
 }
 
-.section-profile:last-child {
+.contatti:last-child {
     border-bottom: none;
 }
 
