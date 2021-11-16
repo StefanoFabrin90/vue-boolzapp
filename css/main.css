@@ -168,7 +168,52 @@ body {
     background-image: url('../img/mine.jpg');
     flex-grow: 1;
     height: 80%;
+    display: flex;
 }
+
+.main-right .message{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-right .message .received {
+    align-self: flex-start;
+}
+
+.main-right .message .received .message-received {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.main-right .message .sent {
+    align-self: flex-end;
+}
+
+.main-right .message .sent .message-sent {
+    background-color: #ddfabf;
+    border-radius: 10px;
+}
+
+.sent p:last-child,
+.received p:last-child {
+    color: lightgrey;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer */
 .chat-footer {
