@@ -178,18 +178,12 @@ body {
 
 .main-right .message .received {
     align-self: flex-start;
-}
-
-.main-right .message .received .message-received {
     background-color: #fff;
     border-radius: 10px;
 }
 
 .main-right .message .sent {
     align-self: flex-end;
-}
-
-.main-right .message .sent .message-sent {
     background-color: #ddfabf;
     border-radius: 10px;
 }
