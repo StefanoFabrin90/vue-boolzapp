@@ -26,9 +26,54 @@
 <body>
     
     <div id="app" class="container">
-        <!-- left -->
-        
-        <!-- right -->
+        <div class="row">
+            <!-- left -->
+            <div class="col-4 section-left">
+
+                <!-- header-left -->
+                <header class="header-left pt-2">
+                    <div class="row">
+                        <div class="col-6 section-profile d-flex">
+                            <div class="img-profile">
+                                <img :src="`./img/${profiloUtente.avatar}.jpg`" alt="ImgProfile">
+                            </div>
+                            <p>{{ profiloUtente.nameUtente }}</p>
+                        </div>
+                        <div class="col-6 section-icons">
+                            <ul class="font-list">
+                                <li class="icons">
+                                    <i class="fas fa-spinner"></i>
+                                </li>
+                                <li class="icons">
+                                    <i class="fas fa-comment-alt"></i>
+                                </li>
+                                <li class="icons">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- section-search -->
+                <section class="section-serch">
+                    <div class="row">
+                        <div class="col-12 search-icon d-flex pt-2">
+                            <div class="inconImg-search">
+                                <i class="fas fa-bell-slash"></i>
+                            </div>
+                            <div class="text-search px-2">
+                                <p>Ricevi notifiche di nuovi messaggi</p>
+                                <a href="#">Attiva notifiche desktop</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- right -->
+            <div class="col-8 section-right"><h1>test</h1></div>
+        </div>
     </div>
 
 

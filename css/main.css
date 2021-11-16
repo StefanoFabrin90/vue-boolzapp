@@ -27,3 +27,65 @@ body {
     background: #fff;
 }
 
+/* SECTION-LEFT */
+/* header-left */
+.section-left {
+    background-color: #ededed;
+}
+
+.section-profile .img-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.section-profile .img-profile img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.section-profile p {
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+.section-icons .font-list {
+    display: flex;
+    list-style: none;
+    font-size: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    color: #bababa;
+
+}
+
+/* section-search */
+.search-icon {
+    background-color: #a2dffe;
+}
+
+.search-icon .inconImg-search {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.search-icon .inconImg-search i {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a2dffe;
+}
+
+.section-right {
+    background-color: cadetblue;
+}
+
