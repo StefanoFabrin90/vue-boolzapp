@@ -85,6 +85,15 @@ body {
     color: #a2dffe;
 }
 
+.search-icon .text-search p {
+    margin-bottom: 0;
+}
+
+.search-icon .text-search a {
+    color: #7099af;
+    font-size: 0.8rem;
+}
+
 .section-right {
     background-color: cadetblue;
 }
