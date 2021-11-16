@@ -1,3 +1,4 @@
+/* general style */
 * {
     padding: 0;
     margin: 0;
@@ -5,7 +6,24 @@
     font-family: 'Lato', sans-serif;
 }
 
-
-h1 {
-    color: blue;
+body {
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        #32a093 0%,
+        #32a093 15%,
+        #dfe0d9 15%,
+        #dfe0d9 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.container {
+    width: 80%;
+    min-width: 900px;
+    height: 90%;
+    background: #fff;
+}
+
