@@ -100,10 +100,10 @@
                 <div class="row pt-2 header-right">
                     <div class="col-9 d-flex chat-profile ">
                         <div class="img-chat">
-                            <img src="./img/avatar_1.jpg" alt="ImgProfile">
+                            <img :src="`./img/${contacts[1].avatar}.jpg`" alt="ImgProfile">
                         </div>
                         <div class="text-chat px-3 pt-1">
-                            <p>Nome Utente</p>
+                            <p> {{ contacts[1].name }} </p>
                             <p>Utimo accesso oggi alle 10.35</p>
                         </div>
                     </div>

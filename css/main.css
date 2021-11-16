@@ -191,23 +191,9 @@ body {
 .sent p:last-child,
 .received p:last-child {
     color: lightgrey;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    margin-bottom: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* footer */
 .chat-footer {
