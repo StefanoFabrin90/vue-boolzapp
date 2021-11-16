@@ -26,7 +26,7 @@
 <body>
     
     <div id="app" class="container">
-        <div class="row">
+        <div class="row display">
             <!-- left -->
             <div class="col-4 section-left">
 
@@ -81,7 +81,7 @@
                 <!-- section-contacts -->
                 <section class="contacts p-3">
                     <div class="row">
-                        <div class="col-12 section-profile contatti d-flex pt-2" v-for="contact in contacts">
+                        <div class="col-12 section-profile contatti d-flex p-2" v-for="(contact,index) in contacts">
                             <div class="img-profile">
                                 <img :src="`./img/${contact.avatar}.jpg`" alt="ImgProfile">
                             </div>
@@ -90,8 +90,64 @@
                     </div>
                 </section>
             </div>
+
+
+
             <!-- right -->
-            <div class="col-8 section-right"><h1>test</h1></div>
+            <div class="col-8 section-right">
+
+                <!-- header-right -->
+                <div class="row pt-2 header-right">
+                    <div class="col-9 d-flex chat-profile ">
+                        <div class="img-chat">
+                            <img src="./img/avatar_1.jpg" alt="ImgProfile">
+                        </div>
+                        <div class="text-chat px-3 pt-1">
+                            <p>{{ profiloUtente.nameUtente }}</p>
+                            <p>Utimo accesso oggi alle 10.35</p>
+                        </div>
+                    </div>
+                    <div class="col-3 icons-chat">
+                        <ul class="font-chat">
+                            <li class="icon-chat">
+                                <i class="fas fa-search"></i>
+                            </li>
+                            <li class="icon-chat">
+                                <i class="fas fa-paperclip"></i>
+                            </li>
+                            <li class="icon-chat">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- main-right -->
+                <main class="row main-right">
+                    <section class="main-content">
+                    test
+                    </section>
+                </main>
+
+                <!-- footer-right -->
+                <fotter class="footer-right">
+                    <div class="row pt-2 header-right">
+                        <div class="col-9 d-flex chat-profile ">
+                            <div class="img-chat">
+                                
+                            </div>
+                            <div class="text-chat px-3 pt-1">
+                                
+                            </div>
+                        </div>
+                        <div class="col-3 icons-chat">
+                            <ul class="font-chat">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </fotter>
+            </div>
         </div>
     </div>
 
