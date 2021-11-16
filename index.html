@@ -31,15 +31,15 @@
             <div class="col-4 section-left">
 
                 <!-- header-left -->
-                <header class="header-left pt-2">
-                    <div class="row">
-                        <div class="col-6 section-profile d-flex">
+                <header>
+                    <div class="row header-left">
+                        <div class="col-6 section-profile d-flex pt-2">
                             <div class="img-profile">
                                 <img :src="`./img/${profiloUtente.avatar}.jpg`" alt="ImgProfile">
                             </div>
-                            <p>{{ profiloUtente.nameUtente }}</p>
+                            <p class="pt-2">{{ profiloUtente.nameUtente }}</p>
                         </div>
-                        <div class="col-6 section-icons">
+                        <div class="col-6 section-icons pt-2">
                             <ul class="font-list">
                                 <li class="icons">
                                     <i class="fas fa-spinner"></i>
@@ -56,8 +56,8 @@
                 </header>
 
                 <!-- section-search -->
-                <section class="section-serch">
-                    <div class="row">
+                <section>
+                    <div class="row section-serch">
                         <div class="col-12 search-icon d-flex p-3">
                             <div class="inconImg-search">
                                 <i class="fas fa-bell-slash"></i>
@@ -66,7 +66,26 @@
                                 <p>Ricevi notifiche di nuovi messaggi</p>
                                 <a href="#">Attiva notifiche desktop</a>
                             </div>
-                            
+                        </div>
+                        <div class="col-12 input-search">
+                            <div class="input-group p-2">
+                                <span class="input-group-text search-Icons" id="basic-addon1">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat" aria-label="Username" aria-describedby="basic-addon1">
+                              </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- section-contacts -->
+                <section class="contacts p-3">
+                    <div class="row">
+                        <div class="col-12 section-profile d-flex pt-2" v-for="contact in contacts">
+                            <div class="img-profile">
+                                <img :src="`./img/${contact.avatar}.jpg`" alt="ImgProfile">
+                            </div>
+                            <p class="pt-3">{{ contact.name }}</p>
                         </div>
                     </div>
                 </section>

@@ -29,7 +29,8 @@ body {
 
 /* SECTION-LEFT */
 /* header-left */
-.section-left {
+.header-left,
+.section-serch { 
     background-color: #ededed;
 }
 
@@ -93,6 +94,20 @@ body {
     color: #7099af;
     font-size: 0.8rem;
 }
+
+.input-search .search-Icons i{
+    color: #c7cacc;
+}
+
+.section-profile {
+    background-color: #fff;
+    border-bottom: 1px solid lightgrey;
+}
+
+.section-profile:last-child {
+    border-bottom: none;
+}
+
 
 .section-right {
     background-color: cadetblue;
