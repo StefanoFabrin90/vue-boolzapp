@@ -27,6 +27,10 @@ body {
     background: #fff;
 }
 
+.display {
+    height: 100%;
+}
+
 /* SECTION-LEFT */
 /* header-left */
 .header-left,
@@ -121,7 +125,7 @@ body {
 .section-right {
     display: flex;
     flex-direction: column;
-    height: 90%;
+    height: 100%;
 }
 
 .header-right {
@@ -160,9 +164,10 @@ body {
 }
 
 /* main-right */
-.main-content {
-    background-color: aqua;
+.main-right {
+    background-image: url('../img/mine.jpg');
     flex-grow: 1;
+    height: 80%;
 }
 
 
