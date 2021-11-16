@@ -90,6 +90,10 @@ const app = new Vue ({
             },
         ],
         contactSlide: 0,
-        
+    },
+    methods: {
+        changeUtente(indexChange) {
+            console.log(indexChange);
+        },
     }
 });
