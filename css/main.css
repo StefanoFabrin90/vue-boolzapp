@@ -170,6 +170,23 @@ body {
     height: 80%;
 }
 
+/* footer */
+.chat-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-footer .footer-icon {
+    padding: 0 20px;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    color: #bababa;
+}
+
+.chat-footer .footer-input {
+    flex-grow: 1;
+}
+
 
 
 
