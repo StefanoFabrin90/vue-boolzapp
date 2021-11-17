@@ -103,6 +103,7 @@ body {
     color: #c7cacc;
 }
 
+/* section-conctact */
 .contatti {
     background-color: #fff;
     border-bottom: 1px solid #c7cacc;
@@ -126,6 +127,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    display: flex;
 }
 
 .header-right {
@@ -169,7 +171,7 @@ body {
     flex-grow: 1;
     height: 80%;
     display: flex;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .main-right .message{
