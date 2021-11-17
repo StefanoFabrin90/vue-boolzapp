@@ -91,7 +91,6 @@ const app = new Vue ({
             },
         ],
         contactSlide: 0,
-        messageSlide: 0,
         newMessage: '',
     },
 
