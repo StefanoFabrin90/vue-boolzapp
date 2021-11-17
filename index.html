@@ -145,15 +145,6 @@
                                 </p>
                             </div>
                         </div>
-                        <!-- <div class="col-4 received">
-                            <div class="message-received px-3 pt-2"
-                                v-for="(message,index) in contacts[contactSlide].messages"
-                            >
-                               <p> 
-                                   {{ message.text }} {{ index }}</p> 
-                               <p class="text-end">16/11/2021 16:20</p>
-                            </div>
-                        </div> -->
                     </div>
                 </main>
 
@@ -166,7 +157,14 @@
                             </div>
                             <div class="footer-input">
                                 <div class="input-group mb-2">
-                                    <input type="text" class="form-control" placeholder="Scrivi un messaggio" aria-label="Username" aria-describedby="basic-addon1">
+                                    <input 
+                                        type="text" 
+                                        class="form-control" 
+                                        placeholder="Scrivi un messaggio" 
+                                        aria-label="Username" 
+                                        aria-describedby="basic-addon1"
+                                        v-model="newMessage"
+                                    >
                                   </div>
                             </div>
                             <div class="footer-icon">

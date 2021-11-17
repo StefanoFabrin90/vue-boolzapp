@@ -91,11 +91,16 @@ const app = new Vue ({
             },
         ],
         contactSlide: 0,
+        newMessage: '',
     },
     methods: {
         changeUtente(indexChange) {
             // console.log(indexChange);
             this.contactSlide = indexChange
         },
+
+        addNewMessage() {
+            console.log(this.ewMessage);
+        }
     }
 });
