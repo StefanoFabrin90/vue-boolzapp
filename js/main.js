@@ -91,16 +91,28 @@ const app = new Vue ({
             },
         ],
         contactSlide: 0,
+        messageSlide: 0,
         newMessage: '',
     },
     methods: {
         changeUtente(indexChange) {
             // console.log(indexChange);
-            this.contactSlide = indexChange
+            this.contactSlide = indexChange;
         },
 
         addNewMessage() {
-            console.log(this.ewMessage);
+            console.log(this.newMessage);
+
+            if(this.newMessage !== '') {
+                
+                const newMessage = {
+                    date: '10/01/2020 16:15:22',
+                    text: this.newMessage,
+                    status: 'sent'
+                }
+
+                this..push(newMessage);
+            }
         }
     }
 });
