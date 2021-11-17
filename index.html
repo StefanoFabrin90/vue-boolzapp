@@ -133,24 +133,24 @@
                 <!-- main-right -->
                 <main class="row main-right">
                     <div class="message p-5">
-                        <div class="col-4 sent">
-                            <div 
-                                class="message-sent px-3 pt-2" 
-                                v-for="(message,index) in contacts[contactSlide].messages"
-                            >
-                                <p
-                                    :class="[{received: received}, message.status]" 
-                                >
-                                    {{ message.text }} {{ index }}
+                        <div 
+                            class="col-4 mb-2" 
+                            v-for="(message,index) in contacts[contactSlide].messages"
+                            :class="[{received: received}, message.status]" 
+                        >
+                            <div class="message-sent px-3 pt-2">
+                                <p>
+                                    {{ message.text }}<br>
+                                    <span class="mt-3">16/11/2021 16:20</span> 
                                 </p>
-                                <p class="text-end">16/11/2021 16:20</p> 
                             </div>
                         </div>
                         <!-- <div class="col-4 received">
                             <div class="message-received px-3 pt-2"
                                 v-for="(message,index) in contacts[contactSlide].messages"
                             >
-                               <p> {{ message.text }} {{ index }}</p> 
+                               <p> 
+                                   {{ message.text }} {{ index }}</p> 
                                <p class="text-end">16/11/2021 16:20</p>
                             </div>
                         </div> -->

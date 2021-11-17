@@ -188,11 +188,14 @@ body {
     border-radius: 10px;
 }
 
-.sent p:last-child,
-.received p:last-child {
+.sent span:last-child,
+.received span:last-child {
     color: lightgrey;
     font-size: 0.7rem;
     margin-bottom: 0;
+    display: flex;
+    justify-content: end;
+    
 }
 
 /* footer */
