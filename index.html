@@ -112,7 +112,7 @@
                         </div>
                         <div class="text-chat px-3 pt-1">
                             <p> {{ contacts[contactSlide].name}} </p>
-                            <p>Utimo accesso oggi alle 10.35</p>
+                            <p>Ultimo accesso oggi alle 10.35</p>
                         </div>
                     </div>
                     <div class="col-3 icons-chat">
@@ -141,7 +141,7 @@
                             <div class="message-sent px-3 pt-2">
                                 <p>
                                     {{ message.text }}<br>
-                                    <span class="mt-3">16/11/2021 16:20</span> 
+                                    <span class="mt-3">{{ message.date }}</span> 
                                 </p>
                             </div>
                         </div>
@@ -178,7 +178,8 @@
         </div>
     </div>
 
-
+    <!-- dayjs -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
     <!-- js -->
     <script src="./js/main.js"></script>
 </body>

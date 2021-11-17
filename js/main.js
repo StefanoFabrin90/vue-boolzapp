@@ -91,8 +91,15 @@ const app = new Vue ({
             },
         ],
         contactSlide: 0,
+        messageSlide: 0,
         newMessage: '',
     },
+
+    created() {
+        const newformat = dayjs().format('DD/MM/YY hh:mm:ss a');
+        console.log(newformat);
+    },
+
     methods: {
         changeUtente(indexChange) {
             // console.log(indexChange);
@@ -116,14 +123,13 @@ const app = new Vue ({
                 setTimeout( () => {
                     const newMessage = {
                         date: '10/01/2020 16:15:22',
-                        text: 'ok',
+                        text: 'ciao',
                         status: 'received'
                     }
     
                     this.contacts[this.contactSlide].messages.push(newMessage);
-
                 }, 2000)
             }
-        }
-    }
+        },
+    },
 });
