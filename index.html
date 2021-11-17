@@ -87,7 +87,7 @@
                             @click="changeUtente(index)"
                         >
                             <div class="img-profile">
-                                <img :src="`./img/${contact.avatar}.jpg`" alt="ImgProfile">
+                                <img :src="`./img/avatar${contact.avatar}.jpg`" :alt="contact.name">
                             </div>
                             <p class="pt-3">{{ contact.name }}</p>
                         </div>
@@ -103,11 +103,15 @@
                 <!-- header-right -->
                 <div class="row pt-2 header-right">
                     <div class="col-9 d-flex chat-profile ">
-                        <div class="img-chat">
-                            <img :src="`./img/${contacts[1].avatar}.jpg`" alt="ImgProfile">
+                        <div 
+                            class="img-chat"
+                        >
+                                <img 
+                                    :src="`./img/avatar${contacts[contactSlide].avatar}.jpg`" 
+                                    :alt="contacts[contactSlide].name">
                         </div>
                         <div class="text-chat px-3 pt-1">
-                            <p> {{ contacts[1].name }} </p>
+                            <p> {{ contacts[contactSlide].name}} </p>
                             <p>Utimo accesso oggi alle 10.35</p>
                         </div>
                     </div>

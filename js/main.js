@@ -8,7 +8,7 @@ const app = new Vue ({
         contacts: [
             {
                 name: 'Michele',
-                avatar: 'avatar_1',
+                avatar: '_1',
                 visible: true,
                 messages: [
                     {
@@ -30,7 +30,7 @@ const app = new Vue ({
             },
             {
                 name: 'Fabio',
-                avatar: 'avatar_2',
+                avatar: '_2',
                 visible: true,
                 messages: [
                     {
@@ -51,7 +51,7 @@ const app = new Vue ({
                 ],
             },    {
                 name: 'Samuele',
-                avatar: 'avatar_3',
+                avatar: '_3',
                 visible: true,
                 messages: [
                     {
@@ -73,7 +73,7 @@ const app = new Vue ({
             },
             {
                 name: 'Luisa',
-                avatar: 'avatar_4',
+                avatar: '_4',
                 visible: true,
                 messages: [
                     {
@@ -93,7 +93,8 @@ const app = new Vue ({
     },
     methods: {
         changeUtente(indexChange) {
-            console.log(indexChange);
+            // console.log(indexChange);
+            this.contactSlide = indexChange
         },
     }
 });
