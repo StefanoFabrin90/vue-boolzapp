@@ -136,24 +136,24 @@
                         <div class="col-4 sent">
                             <div 
                                 class="message-sent px-3 pt-2" 
-                                v-for="message in contacts[contactSlide].messages"
+                                v-for="(message,index) in contacts[contactSlide].messages"
                             >
                                 <p
-                                    :class="{sent: contacts[contactSlide].status}" 
+                                    :class="[{received: received}, message.status]" 
                                 >
-                                    {{ message.text }}
+                                    {{ message.text }} {{ index }}
                                 </p>
                                 <p class="text-end">16/11/2021 16:20</p> 
                             </div>
                         </div>
-                        <div class="col-4 received">
+                        <!-- <div class="col-4 received">
                             <div class="message-received px-3 pt-2"
-                                v-for="message in contacts[contactSlide].messages"
+                                v-for="(message,index) in contacts[contactSlide].messages"
                             >
-                               <p> {{ message.text }}</p> 
+                               <p> {{ message.text }} {{ index }}</p> 
                                <p class="text-end">16/11/2021 16:20</p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </main>
 
