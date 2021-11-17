@@ -177,14 +177,14 @@ body {
 }
 
 .main-right .message .received {
-    align-self: flex-start;
-    background-color: #fff;
+    align-self: flex-end;
+    background-color: #ddfabf;
     border-radius: 10px;
 }
 
 .main-right .message .sent {
-    align-self: flex-end;
-    background-color: #ddfabf;
+    align-self: flex-start;
+    background-color: #fff;
     border-radius: 10px;
 }
 

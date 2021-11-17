@@ -136,7 +136,7 @@
                         <div 
                             class="col-4 mb-2" 
                             v-for="(message,index) in contacts[contactSlide].messages"
-                            :class="[{received: received}, message.status]" 
+                            :class="[{received: 'received'}, message.status]" 
                         >
                             <div class="message-sent px-3 pt-2">
                                 <p>
@@ -163,7 +163,8 @@
                                         placeholder="Scrivi un messaggio" 
                                         aria-label="Username" 
                                         aria-describedby="basic-addon1"
-                                        v-model="newMessage"
+                                        v-model.trim="newMessage"
+                                        @keyup.enter="addNewMessage"
                                     >
                                   </div>
                             </div>
