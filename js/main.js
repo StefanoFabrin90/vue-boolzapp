@@ -49,7 +49,8 @@ const app = new Vue ({
                         status: 'sent'
                     }
                 ],
-            },    {
+            },    
+            {
                 name: 'Samuele',
                 avatar: '_3',
                 visible: true,

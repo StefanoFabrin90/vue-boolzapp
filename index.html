@@ -134,17 +134,27 @@
                 <main class="row main-right">
                     <div class="message p-5">
                         <div class="col-4 sent">
-                            <div class="message-sent px-3 pt-2">
-                                <p>Messaggio inviato</p>
+                            <div 
+                                class="message-sent px-3 pt-2" 
+                                v-for="message in contacts[contactSlide].messages"
+                            >
+                                <p
+                                    :class="{sent: contacts[contactSlide].status}" 
+                                >
+                                    {{ message.text }}
+                                </p>
                                 <p class="text-end">16/11/2021 16:20</p> 
                             </div>
                         </div>
                         <div class="col-4 received">
-                            <div class="message-received px-3 pt-2">
-                               <p>Messaggio ricevuto</p> 
+                            <div class="message-received px-3 pt-2"
+                                v-for="message in contacts[contactSlide].messages"
+                            >
+                               <p> {{ message.text }}</p> 
                                <p class="text-end">16/11/2021 16:20</p>
                             </div>
                         </div>
+                    </div>
                 </main>
 
                 <!-- footer-right -->
