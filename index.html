@@ -164,7 +164,7 @@
                                         aria-label="Username" 
                                         aria-describedby="basic-addon1"
                                         v-model.trim="newMessage"
-                                        @keyup.enter="addNewMessage"
+                                        @keyup.enter.prevent="addNewMessage"
                                     >
                                   </div>
                             </div>

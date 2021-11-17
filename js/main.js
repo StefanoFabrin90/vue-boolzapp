@@ -91,7 +91,6 @@ const app = new Vue ({
             },
         ],
         contactSlide: 0,
-        messageSlide: 0,
         newMessage: '',
     },
     methods: {
@@ -101,7 +100,7 @@ const app = new Vue ({
         },
 
         addNewMessage() {
-            console.log(this.newMessage);
+            // console.log(this.newMessage);
 
             if(this.newMessage !== '') {
                 
@@ -111,7 +110,19 @@ const app = new Vue ({
                     status: 'sent'
                 }
 
-                this..push(newMessage);
+                this.contacts[this.contactSlide].messages.push(newMessage);
+                this.newMessage = '';
+
+                setTimeout( () => {
+                    const newMessage = {
+                        date: '10/01/2020 16:15:22',
+                        text: 'ok',
+                        status: 'received'
+                    }
+    
+                    this.contacts[this.contactSlide].messages.push(newMessage);
+
+                }, 2000)
             }
         }
     }
