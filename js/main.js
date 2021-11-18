@@ -111,7 +111,7 @@ const app = new Vue ({
             if(this.newMessage !== '') {
                 
                 const newMessage = {
-                    date: '10/01/2020 16:15:22',
+                    date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
                     text: this.newMessage,
                     status: 'sent'
                 }
@@ -121,7 +121,7 @@ const app = new Vue ({
 
                 setTimeout( () => {
                     const newMessage = {
-                        date: '10/01/2020 16:15:22',
+                        date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
                         text: 'ciao',
                         status: 'received'
                     }
