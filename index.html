@@ -72,7 +72,13 @@
                                 <span class="input-group-text search-Icons" id="basic-addon1">
                                     <i class="fas fa-search"></i>
                                 </span>
-                                <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat" aria-label="Username" aria-describedby="basic-addon1">
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    placeholder="Cerca o inizia una nuova chat" aria-label="Username" aria-describedby="basic-addon1"
+                                    v-model="search"
+                                    @keyup="filterList"
+                                >
                               </div>
                         </div>
                     </div>
@@ -83,7 +89,8 @@
                     <div class="row">
                         <div 
                             class="col-12 section-profile contatti d-flex p-2" 
-                            v-for="(contact,index) in contacts"
+                            
+                            v-for="(contact,index) in filterList"
                             @click="changeUtente(index)"
                             :class="{active: index === contactSlide}"
                         >
@@ -169,7 +176,7 @@
                                         aria-label="Username" 
                                         aria-describedby="basic-addon1"
                                         v-model.trim="newMessage"
-                                        @keyup.enter.prevent="addNewMessage"
+                                        @keyup.enter="addNewMessage"
                                     >
                                   </div>
                             </div>
