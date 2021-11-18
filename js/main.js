@@ -93,6 +93,7 @@ const app = new Vue ({
         contactSlide: 0,
         newMessage: '',
         search: '',
+        
     },
 
     created() {
@@ -131,14 +132,18 @@ const app = new Vue ({
                 }, 2000)
             }
         },
+
+        filterList() {
+            console.log(this.search);
+        }
     },
 
-    computed: {
-        filterList() {
-            return this.contacts.filter(contact => {
-                return contact.name.toLowerCase().includes(this.search.toLowerCase())
-            })
-        }
-    }
+    // computed: {
+    //     filterList() {
+    //         return this.contacts.filter(contact => {
+    //             return contact.name.toLowerCase().includes(this.search.toLowerCase())
+    //         })
+    //     },
+    // },
 
 });

@@ -89,8 +89,7 @@
                     <div class="row">
                         <div 
                             class="col-12 section-profile contatti d-flex p-2" 
-                            
-                            v-for="(contact,index) in filterList"
+                            v-for="(contact,index) in contacts"
                             @click="changeUtente(index)"
                             :class="{active: index === contactSlide}"
                         >
