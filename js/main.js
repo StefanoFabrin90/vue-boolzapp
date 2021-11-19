@@ -132,26 +132,28 @@ const app = new Vue ({
             }
         },
 
-        // filterList() {
-            // console.log(this.search);
+        filterList() {
+             console.log(this.search);
             
             // l'idea e' che al keyup sull'input di ricerca ti parte una funzione che si prende il valore dell'input e setta la proprieta visible a true solo a quei contatti che contengono la stringa nell'input
 
             // dopodiche' nell'html li filtri e mostri solo un contatto se visible e' a true
-            // this.contacts.forEach((contact) => {
-            //     if(contact.includes(this.search)) {
-            //         contact.visible = true
-            //     } else {contact.visible = false}
-            // })
-        // }
+            this.contacts.forEach((contact) => {
+                if(contact.name.toLowerCase().includes(this.search.toLowerCase())) {
+                    contact.visible = true;
+                } else {
+                    contact.visible = false;
+                }
+            })
+        }
     },
 
-    computed: {
-        filterList() {
-             return this.contacts.filter(contact => {
-                 return contact.name.toLowerCase().includes(this.search.toLowerCase())
-             })
-        },
-    },
+    // computed: {
+    //     filterList() {
+    //          return this.contacts.filter(contact => {
+    //              return contact.name.toLowerCase().includes(this.search.toLowerCase())
+    //          })
+    //     },
+    // },
 
 });

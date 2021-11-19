@@ -88,10 +88,11 @@
                 <section class="contacts p-3">
                     <div class="row">
                         <div 
-                            class="col-12 section-profile contatti d-flex p-2" 
-                            v-for="(contact,index) in contacts"
+                            class="col-12 section-profile contatti p-2" 
+                            v-for="(contact, index) in contacts"
                             @click="changeUtente(index)"
                             :class="{active: index === contactSlide}"
+                            v-show="contact.visible === true"
                         >
                             <div class="img-profile">
                                 <img :src="`./img/avatar${contact.avatar}.jpg`" :alt="contact.name">
